@@ -1,0 +1,580 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="keywords" content="Python Conference Japan,PyCon JP,PyConJP,2012">
+    
+    <title>ハンズオン - PyCon JP 2012</title>
+    <link rel="canonical" href="http://2012.pycon.jp/program/handson.html">
+    <link rel="shortcut icon" href="../_static/favicon.png" />
+    <link rel="stylesheet" href="../_static/cssreset-min.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/default.css" type="text/css" media="all" />
+    <link rel="stylesheet" href="../_static/print.css" type="text/css" media="print" />
+    <link rel="alternate" type="application/rss+xml" title="RSS" href="../rss.xml" />
+    <!--[if lt IE 8]>
+        <link rel="stylesheet" type="text/css" href="../_static/ie_fixed.css" />
+    <![endif]-->
+</head>
+
+<body id="program-handson" class="lang-ja">
+<div id="container">
+    <div id="header">
+        <div id="pyconlogo">
+	  <a href="../index.html">PyCon Japan 2012</a>
+	</div>
+        <div id="pyconinfo">
+            <img src="../_static/image/pyconjp2012_info.gif" usemap="#infomap"></img>
+            <map name="infomap">
+              <area shape="rect" coords="0,0,170,45" href="index.html#timetable-day1-ja" alt="プログラム 9月15日(土曜)">
+              <area shape="rect" coords="195,0,310,45" href="index.html#timetable-day2-ja" alt="プログラム 9月16日(日曜)">
+              <area shape="rect" coords="335,0,450,45" href="index.html#timetable-day3-ja" alt="プログラム 9月17日(祝日)">
+              <area shape="rect" coords="0,50,450,80" href="../venue.html" alt="開催場所">
+            </map>
+            <dl>
+                <dt>日時</dt>
+                <dd>2012年9月15日(土)/16日(日)/17日（祝）</dd>
+                <dt>会場</dt>
+                <dd>東京都品川区東大井　産業技術大学院大学</dd>
+            </dl>
+        </div>
+    </div>
+
+    <div id="navi">
+        <ul id="pages">
+            <li><a href="../about.html" class="about">PyCon JP 2012</a></li>
+            
+            <li><a href="index.html" class="program">プログラム</a></li>
+            <li><a href="../sponsor.html" class="sponsor">スポンサー</a></li>
+            <li><a href="../participants/index.html" class="participants">参加する方へ</a></li>
+            <li><a href="../reports/index.html" class="reports">開催報告</a></li>
+            <li><a href="http://pyconjp.blogspot.jp/" class="blog">Blog</a></li>
+        </ul>
+        <div id="rss" class="rss">
+          <a href="../rss.xml"><img src="../_static/image/feed-icon-28x28.png" class="rss-image" /></a>
+        </div>
+    </div>
+
+    <div id="ej-selector">
+        <ul>
+            <li id="japanese"><a href="#">日本語</a></li>
+            <li id="english"><a href="/en/program/handson.html">English</a></li>
+        </ul>
+    </div>
+    <div id="content">
+  <div class="section" id="id1">
+<h1>ハンズオン<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h1>
+<p>ハンズオン一覧</p>
+<ul class="simple">
+<li><a class="reference internal" href="#session-15-1100-room358-ja"><em>Pythonプログラミングハンズオン(初心者向け)</em></a></li>
+<li><a class="reference internal" href="#session-15-1430-room358-ja"><em>ソフトシンセを作りながら学ぶPythonプログラミング(初級者)</em></a></li>
+<li><a class="reference internal" href="#session-16-1000-room358-ja"><em>はじめてのWeb(Flask)アプリケーション(中級者)</em></a></li>
+</ul>
+<div class="section" id="handson-notify">
+<span id="id2"></span><h2>ハンズオンの参加に際しての注意など<a class="headerlink" href="#handson-notify" title="Permalink to this headline">¶</a></h2>
+<p>ハンズオンに参加される際には以下の点にご留意ください。</p>
+<ul class="simple">
+<li>セッションの定員は40人。参加は先着順です。部屋が一杯になった段階で入室をお断りすることがあります。</li>
+<li>セッションで使用する PC は各自ご用意ください。無線LANにつながる PC の持ち込みがない方の参加はお断りさせていただきます。</li>
+<li>ハンズオンは2〜3セッション分の時間続けて開催されます。途中で抜けて他のセッションを見に行ったりはしないでください。</li>
+<li>一日目はハンズオンが連続して開催されますが、連続してハンズオンに参加される場合であっても一旦退室していただきます。</li>
+<li>ハンズオンでは講師の他に数名 TA(Teaching Assistant) が参加します。わからないことがあれば講師か TA に質問してみてください。</li>
+</ul>
+</div>
+<div class="section" id="python">
+<span id="session-15-1330-room358-ja"></span><span id="session-15-1100-room358-ja"></span><h2>Pythonプログラミングハンズオン(初心者向け)<a class="headerlink" href="#python" title="Permalink to this headline">¶</a></h2>
+<div class="figure align-center">
+<img alt="../_images/tokibito.jpg" src="../_images/tokibito.jpg" />
+<p class="caption"><a class="reference external" href="https://twitter.com/tokibito">岡野 真也 / Shinya Okano</a></p>
+</div>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">講師:</th><td class="field-body">岡野 真也 / Shinya Okano</td>
+</tr>
+<tr class="field-even field"><th class="field-name">資料:</th><td class="field-body"><a class="reference external" href="http://pyconjp2012-python-for-beginners.readthedocs.org/en/latest/index.html">PyCon JP 2012 Pythonプログラミングハンズオン(初級者向け)</a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">対象:</th><td class="field-body">初心者</td>
+</tr>
+<tr class="field-even field"><th class="field-name">言語:</th><td class="field-body">日本語</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">日時:</th><td class="field-body">09/15 11:00 - 14:15 (昼食挟む)</td>
+</tr>
+<tr class="field-even field"><th class="field-name">場所:</th><td class="field-body">Room 358</td>
+</tr>
+</tbody>
+</table>
+<div class="section" id="id3">
+<h3>概要<a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h3>
+<p>基礎的なPythonプログラミングについて、実際に手を動かしながら学習します。</p>
+<ul class="simple">
+<li>Pythonについての簡単な説明</li>
+<li>Pythonプログラミング環境の用意</li>
+<li>動かしてみよう</li>
+<li>Pythonでプログラミングしよう<ul>
+<li>対話シェル</li>
+<li>基本の文法</li>
+<li>ファイルで実行</li>
+<li>モジュール化</li>
+<li>サードパーティモジュールの利用</li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="section" id="id4">
+<h3>対象<a class="headerlink" href="#id4" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li>Pythonプログラミング未経験または初心者</li>
+</ul>
+</div>
+<div class="section" id="id5">
+<h3>用意するもの<a class="headerlink" href="#id5" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li>Windows、MacOSX、Linux(Ubuntuなど)のいずれかのOSがインストールされたノートPC(可能ならPython2.7をインストールしてきてください)</li>
+</ul>
+</div>
+</div>
+<div class="section" id="session-15-1630-room358-ja">
+<span id="session-15-1530-room358-ja"></span><span id="session-15-1430-room358-ja"></span><span id="id6"></span><h2>ソフトシンセを作りながら学ぶPythonプログラミング(初級者)<a class="headerlink" href="#session-15-1630-room358-ja" title="Permalink to this headline">¶</a></h2>
+<div class="figure align-center">
+<img alt="../_images/ransui.jpg" src="../_images/ransui.jpg" />
+<p class="caption"><a class="reference external" href="https://twitter.com/ransui">磯 蘭水 / Ransui Iso</a></p>
+</div>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">講師:</th><td class="field-body">磯 蘭水 / Ransui Iso</td>
+</tr>
+<tr class="field-even field"><th class="field-name">資料:</th><td class="field-body"><a class="reference external" href="http://www.slideshare.net/RansuiIso/python-14315727">ソフトシンセを作りながら学ぶPythonプログラミング</a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">対象:</th><td class="field-body">初心者</td>
+</tr>
+<tr class="field-even field"><th class="field-name">言語:</th><td class="field-body">日本語</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">日時:</th><td class="field-body">09/15 14:30 - 17:15 (休憩挟む)</td>
+</tr>
+<tr class="field-even field"><th class="field-name">場所:</th><td class="field-body">Room 358</td>
+</tr>
+</tbody>
+</table>
+<p>Programming is Fun!</p>
+<p>Pythonに限らずプログラミングの初級者は「Hello Worldは表示できた。
+で、次になにをすればいいの？」という壁によく遭遇します。</p>
+<p>この、PyConJP 2012の中で最長の3時間に渡る初級者向けハンズオン(講義+演習形式)
+では、シンプルで理解しやすく、そして実行結果を物理的に体感できるという点を
+重視して「ソフトウェアシンセサイザー」をテーマに選びました。
+あなたの書いたプログラムが音声データを合成してPCのスピーカーから実際に音が
+出るのです!</p>
+<p>ソフトウェアシンセサイザーには、「音」という物理現象をプログラムで
+どう取り扱うのか、シンセの構造(発振器、変調器、ミキサー、エフェクター等)
+をどうやって表現するか、全体の制御はどのようにするか、そして「音」を
+「音楽」として構成するための「楽譜」をプログラムでどのように取り扱うのか
+といった要素が含まれています。</p>
+<p>これらをPythonを使って1つずつ作成していきながら「プログラマーは世界をどの
+ように見てプログラムに書き換えていくのか」という視点を自然に導入していきます。</p>
+<p>このハンズオンの時間内で作成するものは、単純なものですが、それなりに
+ちゃんと音楽を演奏できるレベルのものです。拡張性も十分に考慮してあるので、
+実力のある人なら、より高度なものに発展させるためのベースにもなるでしょう。</p>
+<p>単なる数値の羅列のデータと、それを弄り回すプログラムが、物理的な「音」と
+それを操作する機械というものを表現しているのだという驚きをぜひ体感してく
+ださい。</p>
+<div class="section" id="id8">
+<h3>対象者: プログラミング初級者<a class="headerlink" href="#id8" title="Permalink to this headline">¶</a></h3>
+<p>以下のいずれかの水準を想定しています</p>
+<ul class="simple">
+<li>15日(土)の「Pythonプログラミングハンズオン(初心者向け)」受講済み</li>
+</ul>
+<p>もしくは</p>
+<ul class="simple">
+<li>「Pythonチュートリアル」の1～6章、9章を読了済み程度の水準
+<a class="reference external" href="http://www.python.jp/doc/release/tutorial/index.html">http://www.python.jp/doc/release/tutorial/index.html</a></li>
+</ul>
+</div>
+<div class="section" id="id9">
+<h3>用意するもの<a class="headerlink" href="#id9" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li>Python2.6 もしくは Python 2.7がインストールされているノートPC<ul>
+<li>実際にプログラミングを行う演習がありますのでPC持参は必須です</li>
+<li>Pythonの標準ライブラリのみを使用するのでOSは問いません</li>
+</ul>
+</li>
+<li>実際に音を出すのでイアフォン等の持参を推奨します</li>
+<li>最後の演習時間のために、演奏したい曲の楽譜等を持参すると、より楽しめるでしょう</li>
+</ul>
+</div>
+<div class="section" id="id10">
+<h3>その他<a class="headerlink" href="#id10" title="Permalink to this headline">¶</a></h3>
+<p>3時間の長丁場です。以下のように進める予定です。</p>
+<ul class="simple">
+<li>基本的に20～30分の解説、20～30分の演習時間、10分の休憩の3セットです。</li>
+<li>演習で使用するプログラムの一部は、予め作成してある物を配ります。全部
+を自分でプログラミングする必要はありません。</li>
+<li>近くの席に座った人同士で教え合って、楽しくプログラミングしましょう。</li>
+</ul>
+</div>
+</div>
+<div class="section" id="web-flask">
+<span id="session-16-1100-room358-ja"></span><span id="session-16-1000-room358-ja"></span><h2>はじめてのWeb(Flask)アプリケーション(中級者)<a class="headerlink" href="#web-flask" title="Permalink to this headline">¶</a></h2>
+<div class="figure align-center">
+<img alt="../_images/atsuo.jpg" src="../_images/atsuo.jpg" />
+<p class="caption"><a class="reference external" href="https://twitter.com/atsuoishimoto">石本 敦夫 / Atsuo Ishimoto</a></p>
+</div>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">講師:</th><td class="field-body">石本 敦夫 / Atsuo Ishimoto</td>
+</tr>
+<tr class="field-even field"><th class="field-name">資料:</th><td class="field-body"><cite>FlaskによるWebアプリケーションの実装とプログラミングツール &lt;https://github.com/atsuoishimoto/pyconjp_2012/blob/master/PyConJP_2012.pdf&gt;</cite></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">対象:</th><td class="field-body">中級者</td>
+</tr>
+<tr class="field-even field"><th class="field-name">言語:</th><td class="field-body">日本語</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">日時:</th><td class="field-body">09/16 10:00 - 11:45 (休憩挟む)</td>
+</tr>
+<tr class="field-even field"><th class="field-name">場所:</th><td class="field-body">Room 358</td>
+</tr>
+</tbody>
+</table>
+<p>Flaskによる簡単なWebアプリケーションの実装を通じ、実用的なPythonプログラミングの実践と、プログラミングツールの使い方を実習します。</p>
+<ul class="simple">
+<li>Flaskによる、Webアプリケーションの実装</li>
+<li>ロギングによるデータ収集</li>
+<li>デバッガを使ったデバッグ実習</li>
+<li>プロファイラによるパフォーマンス測定</li>
+</ul>
+<p>など</p>
+<ul class="simple">
+<li>対象者： 短くてもPythonスクリプトを書いた経験があること</li>
+<li>Pythonバージョン：Python2.6 or 2.7</li>
+<li>OS：自由</li>
+</ul>
+</div>
+</div>
+
+
+        <div id="sidebar">
+            <div  id="about-sponsor" class="sponsor">
+                <a href="../sponsor.html">
+		<h3>&gt;&gt;スポンサーになるには</h3></a>
+            </div>
+            <div id="platinum-sponsor" class="sponsor">
+                <h3><a href="../sponsor.html#ja-platinum">Platinum Sponsor</a></h3>
+                <ul>
+		  
+                    <li>
+      
+    <a href="http://c4sa.nifty.com/" id="nifty" target="_blank">
+    <img src="../_static/image/logo_nifty.png" alt="ニフティ" /></a>
+  </li>
+		  
+                </ul>
+            </div>
+            <div  id="gold-sponsor" class="sponsor">
+                <h3><a href="../sponsor.html#ja-gold">Gold Sponsor</a></h3>
+
+                <ul>
+		  
+                    <li>
+      
+    <a href="http://www.mongodb.org/" id="10gen" target="_blank">
+    <img src="../_static/image/logo_10gen.png" alt="10gen/MongoDB" /></a>
+  </li>
+		  
+                    <li>
+      
+    <a href="http://gu3.co.jp/" id="gumi" target="_blank">
+    <img src="../_static/image/logo_gumi.png" alt="gumi" /></a>
+  </li>
+		  
+                    <li>
+      
+    <a href="http://windowsazure.com" id="ms" target="_blank">
+    <img src="../_static/image/logo_ms.png" alt="日本マイクロソフト" /></a>
+  </li>
+		  
+                    <li>
+      
+    <a href="http://www.s-cubism.jp/" id="scubism" target="_blank">
+    <img src="../_static/image/logo_scubism.png" alt="エスキュービズム" /></a>
+  </li>
+		  
+                    <li>
+      
+    <a href="http://www.klab.jp/recruit/" id="klab" target="_blank">
+    <img src="../_static/image/logo_klab.png" alt="KLab" /></a>
+  </li>
+		  
+                </ul>
+            </div>
+            <div  id="silver-sponsor" class="sponsor">
+                <h3><a href="../sponsor.html#ja-silver">Silver Sponsor</a></h3>
+                <ul>
+		  
+                    <li>
+      
+    <a href="http://www.fairydevices.jp/" id="fairydevices" target="_blank">
+    <img src="../_static/image/logo_fairydevices.png" alt="フェアリーデバイセズ" /></a>
+  </li>
+		  
+                    <li>
+      
+    <a href="http://www.beproud.jp/" id="beproud" target="_blank">
+    <img src="../_static/image/logo_beproud.png" alt="ビープラウド" /></a>
+  </li>
+		  
+                    <li>
+      
+    <a href="http://snapdi.sh/ja/" id="snapdish" target="_blank">
+    <img src="../_static/image/logo_snapdish.png" alt="SnapDish" /></a>
+  </li>
+		  
+                    <li>
+      
+    <a href="http://bizmobile.co.jp/" id="bizmobile" target="_blank">
+    <img src="../_static/image/logo_bizmobile.png" alt="BizMobile" /></a>
+  </li>
+		  
+                    <li>
+      
+    <a href="http://www.nexedi.co.jp/" id="nexedi" target="_blank">
+    <img src="../_static/image/logo_nexedi.png" alt="Nexedi" /></a>
+  </li>
+		  
+                    <li>
+      
+    <a href="https://developers.google.com/" id="google" target="_blank">
+    <img src="../_static/image/logo_google.png" alt="Google" /></a>
+  </li>
+		  
+                    <li>
+      
+    <a href="http://www.cb21.co.jp/" id="cb21" target="_blank">
+    <img src="../_static/image/logo_cb21.png" alt="キャッチボール・トゥエンティワン" /></a>
+  </li>
+		  
+                    <li>
+      
+    <a href="http://sourceforge.jp/" id="sourceforge" target="_blank">
+    <img src="../_static/image/logo_sourceforge.png" alt="SourceForge.JP" /></a>
+  </li>
+		  
+                    <li>
+      
+    <a href="http://triax.jp/" id="triax" target="_blank">
+    <img src="../_static/image/logo_triax.png" alt="TriAx" /></a>
+  </li>
+		  
+                    <li>
+      
+    <a href="http://zero-start.jp/" id="zerostart" target="_blank">
+    <img src="../_static/image/logo_zerostart.png" alt="ゼロスタート" /></a>
+  </li>
+		  
+                    <li>
+      
+    <a href="https://codeiq.jp/" id="codeiq" target="_blank">
+    <img src="../_static/image/logo_codeiq.png" alt="CodeIQ" /></a>
+  </li>
+		  
+                    <li>
+      
+    <a href="http://www.ariel-networks.com/" id="ariel" target="_blank">
+    <img src="../_static/image/logo_ariel.png" alt="アリエル・ネットワーク" /></a>
+  </li>
+		  
+                    <li>
+      
+    <a href="http://www.goga.co.jp/" id="goga" target="_blank">
+    <img src="../_static/image/logo_goga.png" alt="ゴーガ" /></a>
+  </li>
+		  
+                    <li>
+      
+    <a href="https://www.smapo.jp/" id="smapo" target="_blank">
+    <img src="../_static/image/logo_smapo.png" alt="スポットライト" /></a>
+  </li>
+		  
+                    <li>
+      
+    <a href="http://virtualtech.jp/" id="vtj" target="_blank">
+    <img src="../_static/image/logo_vtj.png" alt="日本仮想化技術" /></a>
+  </li>
+		  
+                    <li>
+      
+    <a href="http://accense.com/" id="accense" target="_blank">
+    <img src="../_static/image/logo_accense.png" alt="アクセンス・テクノロジー" /></a>
+  </li>
+		  
+                </ul>
+            </div>
+            <div  id="patron" class="sponsor">
+                <h3><a href="../sponsor/patron.html">PyCon JP Patron</a></h3>
+                <ul>
+		  
+                    
+      
+    <a href="http://nakagami.blog.so-net.ne.jp/" id="nakagami" target="_blank">
+    <img src="../_static/image/logo_nakagami.png" alt="中神肇" /></a>
+		  
+                    
+      
+    <a href="http://www.marici.co.jp/" id="marici" target="_blank">
+    <img src="../_static/image/logo_marici.png" alt="マリーチ" /></a>
+		  
+                    
+      
+    <a href="http://www.ark-pc.co.jp/" id="ark" target="_blank">
+    <img src="../_static/image/logo_ark.png" alt="パソコンSHOPアーク" /></a>
+		  
+                    
+      
+    <a href="http://rokujyouhitoma.jp/" id="ike" target="_blank">
+    <img src="../_static/image/logo_ike.png" alt="池 徹" /></a>
+		  
+                    
+      
+    <a href="http://tell-k.hatenablog.com/" id="tellk" target="_blank">
+    <img src="../_static/image/logo_tellk.png" alt="tell-k" /></a>
+		  
+                    
+      
+    <a href="https://twitter.com/BlueSkyDetector" id="takanori" target="_blank">
+    <img src="../_static/image/logo_takanori.png" alt="Takanori Suzuki" /></a>
+		  
+                </ul>
+            </div>
+            <div  id="media-sponsor" class="sponsor">
+                <h3><a href="../sponsor.html#ja-media">Media Sponsor</a></h3>
+                <ul>
+		  
+                    <li>
+      
+    <a href="http://codezine.jp/" id="codezine" target="_blank">
+    <img src="../_static/image/logo_codezine.png" alt="翔泳社" /></a>
+  </li>
+		  
+                    <li>
+      
+    <a href="http://gihyo.jp/" id="gihyo" target="_blank">
+    <img src="../_static/image/logo_gihyo.png" alt="技術評論社" /></a>
+  </li>
+		  
+                    <li>
+      
+    <a href="http://www.oreilly.co.jp/" id="oreilly" target="_blank">
+    <img src="../_static/image/logo_oreilly.png" alt="オライリー・ジャパン" /></a>
+  </li>
+		  
+                    <li>
+      
+    <a href="http://slashdot.jp/" id="slashdot" target="_blank">
+    <img src="../_static/image/logo_slashdot.png" alt="Slashdot Japan" /></a>
+  </li>
+		  
+                    <li>
+      
+    <a href="http://rikunabi-next.yahoo.co.jp/tech/docs/ct_s01100.jsp" id="techsouken" target="_blank">
+    <img src="../_static/image/logo_techsouken.png" alt="Tech 総研" /></a>
+  </li>
+		  
+                </ul>
+            </div>
+            <div  id="support" class="sponsor">
+                <h3>Co-organizer</h3>
+                <ul>
+		  
+                    <li>
+      
+    <a href="http://aiit.ac.jp/" id="aiit" target="_blank">
+    <img src="../_static/image/logo_aiit.png" alt="産業技術大学院大学" /></a>
+  </li>
+		  
+                </ul>
+            </div>
+            <div  id="support" class="sponsor">
+                <h3>Support</h3>
+                <ul>
+		  
+                    <li>
+      
+    <a href="http://www.mozilla.jp/" id="mozilla" target="_blank">
+    <img src="../_static/image/logo_mozilla.png" alt="Mozilla Firefox" /></a>
+  </li>
+		  
+                    <li>
+      
+    <a href="http://www.kytrade.co.jp/" id="kytrade" target="_blank">
+    <img src="../_static/image/logo_kytrade.png" alt="ケイワイトレード" /></a>
+  </li>
+		  
+                    <li>
+      
+    <a href="http://shell.cerevo.com/" id="cerevo" target="_blank">
+    <img src="../_static/image/logo_cerevo.png" alt="Cerevo" /></a>
+  </li>
+		  
+                    <li>
+      
+    <a href="http://www.fungo.com/" id="fungo" target="_blank">
+    <img src="../_static/image/logo_fungo.png" alt="FUNGO" /></a>
+  </li>
+		  
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="clear"></div>
+    <div id="footer">
+        <p>Copyright© 2012
+	  <a href="../about/staff.html">PyCon JP 2012 management team</a>,
+	  All rights reserved.</p>
+        <p>
+            Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.2.3.
+            <a href="../_sources/program/handson.txt"
+               rel="nofollow">Show Source</a>
+        </p>
+    </div>
+</div>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-46515478-3', 'pycon.jp');
+  ga('send', 'pageview');
+
+</script>
+</body>
+</html>

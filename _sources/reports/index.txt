@@ -1,0 +1,19 @@
+:Author: pycon-organizers-jp
+:Date: 2012-10-02 15:00
+==========
+ 開催報告
+==========
+
+* スライドとビデオは :doc:`../program/index` にあります
+
+.. toctree::
+
+   organizers
+   blogs
+   togetter
+   photos
+   survey
+
+
+..
+   earnings

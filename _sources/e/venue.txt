@@ -1,0 +1,12 @@
+:Author: pycon-organizers-jp
+:Date: 2012-05-23 11:03
+:orphan:
+
+.. meta::
+   :http-equiv=refresh: 0;URL=../en/venue.html
+
+=======
+ Venue
+=======
+
+redirect to :doc:`../en/venue`

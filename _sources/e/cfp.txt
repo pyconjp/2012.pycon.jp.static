@@ -1,0 +1,12 @@
+:Author: pycon-organizers-jp
+:Date: 2012-05-22 17:56
+:orphan:
+
+.. meta::
+   :http-equiv=refresh: 0;URL=../en/cfp.html
+
+=================
+ Call for Papers
+=================
+
+redirect to :doc:`../en/cfp`
